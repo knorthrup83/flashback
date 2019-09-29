@@ -121,7 +121,7 @@ body {
   top: 20px;
 }
 
-.Card.-front {
+.Card.front {
   background-color: #FFFAEF;
 }
 
