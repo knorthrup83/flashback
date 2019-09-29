@@ -25,7 +25,7 @@
                 An interactive flashcard app
               </p>
               <div className='card-list'>
-                {cardData.map((card) => <Card front={card.front} />)}
+                {cardData.map((card, index) => <Card key={index} front={card.front} />)}
               </div>
             </div>
           );
