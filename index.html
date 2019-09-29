@@ -20,9 +20,28 @@
             <p className='sub-title'>
               An interactive flashcard app
             </p>
+            <div className='card-list'>
+              {Card()}
+            </div>
           </div>
         );
-      }
+      };
+
+      var Card = function() {
+        return (
+          <div className='Card - front'>
+            <div className='front'>
+              <h3 className='question'>
+                You may know that React was created at _________.
+              </h3>
+              <p className='hint'>
+                <span>Hint:</span> This company's site is known for being written in PHP.
+              </p>
+            </div>
+          </div>
+        );
+      };
+
       ReactDOM.render(App(), document.getElementById('app'));
     </script>
   </body>
