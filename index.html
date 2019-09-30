@@ -26,6 +26,14 @@
           this.setState({ cardData: cardData });
         }
 
+        shuffleBackward = () => {
+          console.log('Shuffle backward');
+        }
+
+        shuffleForward = () => {
+        console.log('Shuffle FW');
+      }
+
         render() {
           return (
             <div className='App'>
@@ -37,6 +45,14 @@
               </p>
               <div className='card-list'>
                 {this.state.cardData.map((card, index) => <Card key={index} front={card.front} />)}
+              </div>
+              <div className='buttons'>
+                <button onClick={() => this.shuffleBackward()}>
+                  &lt;
+                </button>
+                <button onClick={() => this.shuffleForward()}>
+                  &gt;
+                </button>
               </div>
             </div>
           );
